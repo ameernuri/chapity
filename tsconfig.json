@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "target": "es2018",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"]
+    }
+  }
+}

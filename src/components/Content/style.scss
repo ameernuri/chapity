@@ -1,0 +1,54 @@
+.chapity-wrap {
+  background: none;
+
+  .content-wrap {
+    line-height: 1.5;
+    max-width: 100vw;
+    width: 450px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .action-list {
+    display: grid;
+    justify-content: end;
+    justify-items: end;
+    gap: 12px;
+  }
+
+  .dev {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2147483647;
+    overflow-y: auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 'sidebar content' 'bottom bottom';
+
+    .sidebar {
+      grid-area: sidebar;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+
+    .bottom {
+      grid-area: bottom;
+      padding: 1rem;
+
+      input {
+        border: 1px solid #fff;
+        padding: 1rem;
+        background: #000;
+        color: #fff;
+        width: 100%;
+      }
+    }
+  }
+}

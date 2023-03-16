@@ -1,0 +1,85 @@
+@import 'light.scss';
+@import 'dark.scss';
+@import '../../../../node_modules/scss-reset/_reset.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+button,
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+
+body .chapity-wrap {
+  margin-bottom: 30px;
+  flex-basis: 0;
+  flex-grow: 1;
+  z-index: 2147483647;
+  font-size: 18px;
+  color: #000;
+  // background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  div {
+    width: auto;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a.chapity-promo-link {
+    &:hover {
+      text-decoration: none;
+    }
+    a:visited {
+      color: inherit;
+    }
+  }
+
+  .icon-and-text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  #chpaity-answer.markdown-body.chapity-markdown {
+    font-size: 15px;
+    line-height: 1.6;
+
+    pre {
+      margin-top: 10px;
+    }
+
+    & > p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    pre code {
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    pre code.hljs {
+      padding: 0;
+      background-color: transparent;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: underline;
+      &:visited {
+        color: unset;
+      }
+    }
+  }
+}
